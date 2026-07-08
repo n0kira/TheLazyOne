@@ -21,7 +21,7 @@ This Bot was made totally with Node.js following [this guide](https://stardance.
 ---
 
 ## How to run Locally
-1. Register your bot:
+1. **Register your bot**:
     - Go to the [Slack Apps dashboard](https://api.slack.com/apps) and click **Create New App** → **From scratch**.
     - Call it however you want and pick your workspace.
     - Click **Create App**.
@@ -38,19 +38,19 @@ This Bot was made totally with Node.js following [this guide](https://stardance.
     - Open **Slash Commands** in the left sidebar and click **Create New Command**.
     - Register each command mentioned before.
 
-2. Clone the repo:
+2. **Clone the repo**:
     ```
     git clone https://github.com/n0kira/TheLazyOne.git
 
     cd TheLazyOne
     ```
-3. Install dependencies:
+3. **Install dependencies**:
     ```
     npm install
     ```
-4. Set up environment variables:
-    Get your NASA API Key at [this site](https://api.nasa.gov/#signUp).
-    Create a `.env` file and add your Slack and NASA API keys:
+4. **Set up environment variables**:
+    - Get your NASA API Key at [this site](https://api.nasa.gov/#signUp).
+    - Create a `.env` file and add your Slack and NASA API keys:
     ```
     SLACK_APP_TOKEN=xapp....
 
@@ -59,7 +59,7 @@ This Bot was made totally with Node.js following [this guide](https://stardance.
     NASA_API_KEY=your_key...
     ```
 
-5. Run the bot:
+5. **Run the bot**:
     ```
     node index.js
     ```
