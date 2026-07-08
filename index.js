@@ -9,11 +9,11 @@ const app = new App({
     socketMode: true
 });
 
-app.command("/lazy-help", async ({ack, respond}) => {
+app.command("/lazy-help", async ({command, ack, respond}) => {
     await ack();
     await respond({
         text: 
-        'Available Commands:\n/lazy-help - Show this help message\n/lazy-ping - Check bot latency\n/lazy-catfact - Get a cat fact'
+        `Hello <@${command.user_id}>! Thanks for using The Lazy One bot!\nHere are all available Commands:\n\n*Normal Commands*\n\`/lazy-help\` - Show this help message\n\`/lazy-ping\` - Check bot latency\n\`/lazy-reminder [minutes][reason]\` - Set a reminder\n\n*API Commands*\n\`/lazy-catfact\` - Get a cat fact\n\`/lazy-exchange [initialCurrency][targetCurrency][amount]\` - Exchange any amount of money from one currency to another\n\`/lazy-astronomy\` - Get NASA\'s APOD\n\`/lazy-verse\` - Get a random Bible verse\n`
     });
 });
 
