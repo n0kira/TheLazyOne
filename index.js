@@ -46,6 +46,7 @@ app.command("/lazy-astronomy", async({ack, respond}) => {
                 text: `Here is NASA's APOD!\n\n*${response.data.title}*\n${response.data.explanation}`,
                 attachments: [
                     {
+                        fallback: 'Image preview: ${response.data.title}',
                         image_url: response.data.url,
                         alt_text: "APOD"
                     }
